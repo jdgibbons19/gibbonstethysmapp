@@ -1,0 +1,26 @@
+{% extends "mapapp_gibbons/base.html" %}
+{% load tethys_gizmos %}
+
+{% block header_buttons %}
+  <div class="header-button glyphicon-button" data-toggle="tooltip" data-placement="bottom" title="Help">
+    <a data-toggle="modal" data-target="#help-modal"><span class="glyphicon glyphicon-question-sign"></span></a>
+  </div>
+{% endblock %}
+
+{% block app_content %}
+    <h1>About the creator of My Map App</h1>
+    <p>Josh Gibbons is a student in CE EN 514 at BYU. He is a graduate student in Civil Engineering
+        with an emphasis in Transportation Engineering. He loves making Tethys apps in his
+        free time.</p>
+    <p>Have a question for Josh? Email him: <a href="mailto:jdgibbons19@gmail.com" target="_top">Link</a></p>
+    <img src="/static/mapapp_gibbons/images/josh2.png" width="200px"/>
+{% endblock %}
+
+{# Use the after_app_content block for modals #}
+{% block after_app_content %}
+
+{% endblock %}
+
+{% block app_actions %}
+
+{% endblock %}
